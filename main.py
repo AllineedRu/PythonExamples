@@ -1,3 +1,5 @@
+# [RU] Это главный модуль для выполнения всех примеров с сайта https://allineed.ru
+# [EN] This is the main module for executing all the examples from https://allineed.ru site
 import ain_webbrowser
 
 if __name__ == '__main__':
