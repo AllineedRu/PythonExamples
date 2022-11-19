@@ -32,6 +32,7 @@ import ain_common
 
 def run_sample():
     ain_common.print_sample_name("https://allineed.ru/development/python-development/42-python-functions")
+
     x = input("Введите значение для x: ")
     # запуск функции с возвращаемым значением
     print(get_argument_description(x))
