@@ -34,6 +34,8 @@ import ain_for_statement
 import ain_dictionaries
 import ain_lists
 import ain_break_continue_else
+import ain_if_statement
+import ain_strings
 
 if __name__ == '__main__':
     # [RU] Запускает пример из статьи "Как открыть страницу в браузере при помощи Python?"
@@ -62,13 +64,13 @@ if __name__ == '__main__':
 
     # [RU] Запускает пример из статьи "Оператор pass в Python"
     # [RU] Ссылка на статью: https://allineed.ru/development/python-development/40-python-pass-statement
-    # [EN] Runs example from the article "'pass' statement in Python"
+    # [EN] Runs example from the article "'pass' Statement in Python"
     # [RU] Link to the article: https://allineed.ru/development/python-development/40-python-pass-statement
     ain_pass_statement.run_sample()
 
     # [RU] Запускает пример из статьи "Оператор цикла for в Python"
     # [RU] Ссылка на статью: https://allineed.ru/development/python-development/19-python-for-statement
-    # [EN] Runs example from the article "'for' cycle statement in Python"
+    # [EN] Runs example from the article "'for' Cycle Statement in Python"
     # [RU] Link to the article: https://allineed.ru/development/python-development/19-python-for-statement
     ain_for_statement.run_sample()
 
@@ -86,7 +88,20 @@ if __name__ == '__main__':
 
     # [RU] Запускает пример из статьи "Python операторы break, continue и использование блока else в циклах"
     # Ссылка на статью: https://allineed.ru/development/python-development/39-break-and-continue-statements-in-python
-    # [EN] Runs example from the article "Working with lists in Python"
+    # [EN] Runs example from the article "'break', 'continue' statements in Python. Using 'else' in cycles"
     # Link to the article:
     # https://allineed.ru/development/python-development/39-break-and-continue-statements-in-python
     ain_break_continue_else.run_sample()
+
+    # [RU] Запускает пример из статьи "Условный оператор if в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/18-python-if-statement
+    # [EN] Runs example from the article "'if' Statement in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/18-python-if-statement
+    ain_if_statement.run_sample()
+
+    # [RU] Запускает пример из статьи "Работа со строками в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/15-python-working-with-strings
+    # [EN] Runs example from the article "Working with strings in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/15-python-working-with-strings
+    ain_strings.run_sample()
+
