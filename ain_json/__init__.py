@@ -28,11 +28,14 @@ __status__ = "Alpha"
 __version__ = "0.0.1"
 
 import json
+import ain_common
 
 
 def run_sample():
+    ain_common.print_sample_name("https://allineed.ru/development/python-development/48-python-working-with-json")
+
     # сериализуем в JSON-строку список, содержащий внутри себя словарь
-    json1_str = json.dumps(['one', 'two', 'three', {'somekey' : ['someval1', 'someval2'] }])
+    json1_str = json.dumps(['one', 'two', 'three', {'somekey': ['someval1', 'someval2']}])
     print(f'JSON-строка json1_str: {json1_str}')
 
     # преобразуем кортеж в JSON-строку и выводим на консоль
@@ -40,7 +43,7 @@ def run_sample():
     print(f'JSON-строка json2_str: {json2_str}')
 
     # используем сортировку ключей и отступы для более красивого JSON-представления
-    json3_str = json.dumps({'d' : 'd_value', 'e' : 'e_value', 'a' : 'a_value'}, sort_keys=True, indent=4)
+    json3_str = json.dumps({'d': 'd_value', 'e': 'e_value', 'a': 'a_value'}, sort_keys=True, indent=4)
     print(f'JSON-строка json3_str: {json3_str}')
 
     # десериализация из JSON-строки в список, содержащий внутри себя, в частности, словарь
