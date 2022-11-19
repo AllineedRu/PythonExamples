@@ -29,6 +29,8 @@ import ain_tuples
 import ain_webbrowser
 import ain_json
 import ain_functions
+import ain_pass_statement
+import ain_for_statement
 
 if __name__ == '__main__':
     # [RU] Запускает пример из статьи "Как открыть страницу в браузере при помощи Python?"
@@ -57,6 +59,12 @@ if __name__ == '__main__':
 
     # [RU] Запускает пример из статьи "Оператор pass в Python"
     # [RU] Ссылка на статью: https://allineed.ru/development/python-development/40-python-pass-statement
-    # [EN] Runs example from the article "Operator pass in Python"
+    # [EN] Runs example from the article "'pass' statement in Python"
     # [RU] Link to the article: https://allineed.ru/development/python-development/40-python-pass-statement
-    ain_functions.run_sample()
+    ain_pass_statement.run_sample()
+
+    # [RU] Запускает пример из статьи "Оператор цикла for в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/19-python-for-statement
+    # [EN] Runs example from the article "'for' cycle statement in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/19-python-for-statement
+    ain_for_statement.run_sample()
