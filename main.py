@@ -24,7 +24,6 @@ __maintainer__ = "Max Damascus"
 __status__ = "Alpha"
 __version__ = "0.0.1"
 
-
 import ain_tuples
 import ain_webbrowser
 import ain_json
@@ -36,6 +35,9 @@ import ain_lists
 import ain_break_continue_else
 import ain_if_statement
 import ain_strings
+import ain_range
+import ain_date_and_time
+import ain_logging
 
 if __name__ == '__main__':
     # [RU] Запускает пример из статьи "Как открыть страницу в браузере при помощи Python?"
@@ -105,3 +107,20 @@ if __name__ == '__main__':
     # [RU] Link to the article: https://allineed.ru/development/python-development/15-python-working-with-strings
     ain_strings.run_sample()
 
+    # [RU] Запускает пример из статьи "Функция range() в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/20-python-range-function
+    # [EN] Runs example from the article "Range function in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/20-python-range-function
+    ain_range.run_sample()
+
+    # [RU] Запускает пример из статьи "Работа с датой и временем в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/45-python-working-with-datetime
+    # [EN] Runs example from the article "Working with date and time in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/45-python-working-with-datetime
+    ain_date_and_time.run_sample()
+
+    # [RU] Запускает пример из статьи "Модуль logging в Python. Логируем сообщения скрипта в файл"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/46-python-logging-module
+    # [EN] Runs example from the article "Module 'logging' in Python. Logging script messages into a file"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/46-python-logging-module
+    ain_logging.run_sample()
