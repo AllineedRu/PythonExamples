@@ -31,6 +31,9 @@ import ain_json
 import ain_functions
 import ain_pass_statement
 import ain_for_statement
+import ain_dictionaries
+import ain_lists
+import ain_break_continue_else
 
 if __name__ == '__main__':
     # [RU] Запускает пример из статьи "Как открыть страницу в браузере при помощи Python?"
@@ -68,3 +71,22 @@ if __name__ == '__main__':
     # [EN] Runs example from the article "'for' cycle statement in Python"
     # [RU] Link to the article: https://allineed.ru/development/python-development/19-python-for-statement
     ain_for_statement.run_sample()
+
+    # [RU] Запускает пример из статьи "Работа со словарями в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/49-python-working-with-dictionaries
+    # [EN] Runs example from the article "Working with dictionaries in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/49-python-working-with-dictionaries
+    ain_dictionaries.run_sample()
+
+    # [RU] Запускает пример из статьи "Работа со списками в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/17-python-working-with-lists
+    # [EN] Runs example from the article "Working with lists in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/17-python-working-with-lists
+    ain_lists.run_sample()
+
+    # [RU] Запускает пример из статьи "Python операторы break, continue и использование блока else в циклах"
+    # Ссылка на статью: https://allineed.ru/development/python-development/39-break-and-continue-statements-in-python
+    # [EN] Runs example from the article "Working with lists in Python"
+    # Link to the article:
+    # https://allineed.ru/development/python-development/39-break-and-continue-statements-in-python
+    ain_break_continue_else.run_sample()
