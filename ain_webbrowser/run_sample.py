@@ -1,8 +1,8 @@
 """
-[EN] Module contains the sample Python code from the article
+[EN] This script runs the example from the article
 https://allineed.ru/development/python-development/47-python-opening-browser-url
 
-[RU] Модуль содержит пример Python кода из статьи
+[RU] Этот скрипт запускает пример из статьи
 https://allineed.ru/development/python-development/47-python-opening-browser-url
 
 This program is free software: you can redistribute it and/or modify it under
@@ -27,24 +27,6 @@ __maintainer__ = "Max Damascus"
 __status__ = "Alpha"
 __version__ = "0.0.1"
 
-import ain_common
-import webbrowser
-import sys
+import ain_webbrowser
 
-
-def run_sample():
-    ain_common.print_sample_name("https://allineed.ru/development/python-development/47-python-opening-browser-url")
-
-    edge_executable_path = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
-    print(f'Путь к исполняемому файлу MS Edge: {edge_executable_path}')
-    edge_browser_instance = webbrowser.BackgroundBrowser(edge_executable_path)
-    webbrowser.register(name='edge', klass=None, instance=edge_browser_instance, preferred=False)
-
-    try:
-        inst = webbrowser.get('edge')
-        inst.open_new("http://yandex.ru")  # Открыть страницу http://yandex.ru в браузере MS Edge
-    except TypeError:
-        typ, value, traceback = sys.exc_info()
-        print(f'Error occurred:\r\n\ttype: {typ}\r\n\tvalue: {value}\r\n\ttraceback = {traceback}')
-
-    webbrowser.open_new("http://python.org")
+ain_webbrowser.run_sample()
