@@ -38,6 +38,7 @@ import ain_strings
 import ain_range
 import ain_date_and_time
 import ain_logging
+import ain_base64
 
 if __name__ == '__main__':
     # [RU] Запускает пример из статьи "Как открыть страницу в браузере при помощи Python?"
@@ -124,3 +125,9 @@ if __name__ == '__main__':
     # [EN] Runs example from the article "Module 'logging' in Python. Logging script messages into a file"
     # [RU] Link to the article: https://allineed.ru/development/python-development/46-python-logging-module
     ain_logging.run_sample()
+
+    # [RU] Запускает пример из статьи "Работа с Base64 в Python. Кодируем в Base64 и раскодируем обратно"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/44-python-encoding-to-base64
+    # [EN] Runs example from the article "Working with Base64 in Python. Encoding to and decoding from Base64"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/44-python-encoding-to-base64
+    ain_base64.run_sample()
