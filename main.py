@@ -27,6 +27,7 @@ __version__ = "0.0.1"
 
 import ain_tuples
 import ain_webbrowser
+import ain_json
 
 if __name__ == '__main__':
     # [RU] Запускает пример из статьи "Как открыть страницу в браузере при помощи Python?"
@@ -40,3 +41,9 @@ if __name__ == '__main__':
     # [EN] Runs example from the article "Tuples in Python"
     # [RU] Link to the article: https://allineed.ru/development/python-development/43-python-tuples
     ain_tuples.run_sample()
+
+    # [RU] Запускает пример из статьи "Как работать с JSON в Python"
+    # [RU] Ссылка на статью: https://allineed.ru/development/python-development/48-python-working-with-json
+    # [EN] Runs example from the article "How to work with JSON in Python"
+    # [RU] Link to the article: https://allineed.ru/development/python-development/48-python-working-with-json
+    ain_json.run_sample()
