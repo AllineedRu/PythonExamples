@@ -19,7 +19,7 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 
 class Robot:
     """
-    [RU] Класс, описывающий робота, у которого есть заданы свойства: название робота (модель), количество рук,
+    [RU] Класс, описывающий робота, у которого есть свойства: название робота (модель), количество рук,
     количество ног, высота робота (в метрах), вес робота (в килограммах), скорость ходьбы робота.
     [EN] A class that describes a robot that has specified properties: robot name (model), number of arms,
     number of legs, height of the robot (in meters), weight of the robot (in kilograms), walking speed of the robot.
