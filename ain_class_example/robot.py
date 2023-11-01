@@ -33,7 +33,7 @@ class Robot:
         self.legs: int = legs
         self.height: int = height
         self.weight: int = weight
-        self.walk_speed: int = walking_speed
+        self.walking_speed: int = walking_speed
         self._is_running: bool = False
 
     def _check_if_zero_speed(self, error_message_if_no_speed):
@@ -45,7 +45,7 @@ class Robot:
         :return: [RU] True, если скорость ходьбы робота равна 0, иначе False;
                  [EN] True if the robot's walking speed is 0, otherwise False.
         """
-        if self.walk_speed == 0:
+        if self.walking_speed == 0:
             print(error_message_if_no_speed)
             return True
         return False
@@ -58,7 +58,7 @@ class Robot:
         If the robot's current speed is 0, an error will be shown.
         """
         if not self._check_if_zero_speed(f'robot.walk(): Робот не может начать ходьбу, т.к. его скорость равна 0 км/ч'):
-            print(f'robot.walk(): Робот пошёл со скоростью {self.walk_speed} км/ч')
+            print(f'robot.walk(): Робот пошёл со скоростью {self.walking_speed} км/ч')
             self._is_running = False
 
     def run(self):
@@ -72,15 +72,15 @@ class Robot:
             print(f'robot.run(): Робот побежал со скоростью {self._get_run_speed()} км/ч')
             self._is_running = True
 
-    def set_walk_speed(self, new_walk_speed: int):
+    def set_walking_speed(self, new_walking_speed: int):
         """
         [RU] Метод устанавливает скорость ходьбы для робота;
         [EN] The method sets the walking speed for the robot.
 
-        :param new_walk_speed: [RU] новая скорость ходьбы для робота; [EN] new walking speed for the robot
+        :param new_walking_speed: [RU] новая скорость ходьбы для робота; [EN] new walking speed for the robot
         """
-        self.walk_speed = new_walk_speed
-        print(f'robot.set_speed({new_walk_speed}): Установлена новая скорость для робота: {self.walk_speed} км/ч')
+        self.walking_speed = new_walking_speed
+        print(f'robot.set_speed({new_walking_speed}): Установлена новая скорость для робота: {self.walking_speed} км/ч')
 
     def _get_run_speed(self):
         """
@@ -88,19 +88,19 @@ class Robot:
         [EN] Private method. Returns the robot's current running speed.
         :return: [RU] значение текущей скорости бега робота; [EN] value of the robot's current running speed.
         """
-        return self.walk_speed * self.running_speed_coefficient
+        return self.walking_speed * self.running_speed_coefficient
 
     def jump(self):
         """
         [RU] Метод предписывает роботу прыгнуть, независимо от того, находится ли робот в движении или стоит;
         [EN] The method instructs the robot to jump, regardless of whether the robot is moving or standing.
         """
-        if self.walk_speed == 0:
+        if self.walking_speed == 0:
             print('robot.jump(): Робот подпрыгнул на месте.')
         elif self._is_running:
             print(f'robot.jump(): Робот подпрыгнул на бегу, двигаясь со скоростью {self._get_run_speed()} км/ч')
         else:
-            print(f'robot.jump(): Робот подпрыгнул при ходьбе, двигаясь со скоростью {self.walk_speed} км/ч')
+            print(f'robot.jump(): Робот подпрыгнул при ходьбе, двигаясь со скоростью {self.walking_speed} км/ч')
 
     def show_info(self):
         """
@@ -114,6 +114,6 @@ class Robot:
         print(f'\tКоличество ног у робота: {self.legs}')
         print(f'\tВысота робота (метров): {self.height}')
         print(f'\tВес робота (кг): {self.weight}')
-        print(f'\tТекущая скорость ходьбы робота (км/ч): {self.walk_speed}')
+        print(f'\tТекущая скорость ходьбы робота (км/ч): {self.walking_speed}')
         print(f'\tТекущая скорость бега робота (км/ч): {self._get_run_speed()}')
         print('---')

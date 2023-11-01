@@ -50,7 +50,7 @@ def run_sample():
     robot1.walk()
 
     # установить скорость для робота 5 км/ч
-    robot1.set_walk_speed(5)
+    robot1.set_walking_speed(5)
 
     # вызвать метод прыжка, когда робот идёт
     robot1.jump()
